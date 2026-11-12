@@ -1,0 +1,10 @@
+spring:
+  elasticsearch:
+    uris: http://localhost:9200
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=tracer;encrypt=false
+    username: sa
+    password: ${MSSQL_PASSWORD:changeme}
+  jpa:
+    hibernate:
+      ddl-auto: update
